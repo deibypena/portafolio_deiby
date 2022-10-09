@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/index.css';
+import Header from './components/Header';
+import Subtitle from './components/Subtitle';
+import Services from './components/Services';
+import About from './components/About';
+import Projects from './components/Projects';
+import Client from './components/Client';
+import Contacto from './components/Contacto';
+import ThemeToggle from './components/ThemeToggle';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Subtitle
+        subtitle='Mis'
+        subtitleSpan='Servicios'  
+      />
+      <Services />
+      <Subtitle
+        subtitle='Sobre'
+        subtitleSpan='Mi'  
+      />
+      <About />
+      <Subtitle
+        subtitle='Mis'
+        subtitleSpan='Proyectos'  
+      />
+      <Projects />
+      <Subtitle
+        subtitle='Mis'
+        subtitleSpan='Clientes'  
+      />
+      <Client />
+      <Subtitle
+        subtitle='Contáctate '
+        subtitleSpan='Conmigo'  
+      />
+      <Contacto />
+      <ThemeToggle />
     </div>
   );
 }
